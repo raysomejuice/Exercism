@@ -1,0 +1,9 @@
+def square(number: int) -> int:
+    if number not in range(1, 65):
+        raise ValueError("square must be between 1 and 64")
+    else:
+        return 2 ** (number - 1)
+
+
+def total() -> int:
+    return sum([2 ** x for x in range(64)])
